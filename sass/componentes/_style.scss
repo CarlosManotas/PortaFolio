@@ -11,6 +11,12 @@ h1{
 h2{
 	font-size: 3rem;
 }
+.titulo{
+	@include desde (tablet){
+		padding-top: 2em;
+	}
+	
+}
 /*///////////////////////////////////////////////////////////
        
                         HEADER + NAV
@@ -22,6 +28,9 @@ h2{
 	padding: .6em .3em 0 .3em;
 	background-color: #5d92d9;
 	border-radius: 0 0 50% 50%;
+	@include desde (web){
+		width: 180px;
+	}
 }
 #mostrar-menu{
 	padding-top: 1em;
@@ -44,11 +53,15 @@ h2{
 	display: none;
 
 	@include desde (tablet){
-		display: inline-block;
 		background: transparent;
+		display:block;
+		text-align: right;
 	}
 
 	&__item {
+		@include desde (tablet){
+			display: inline-block;
+		}
 		&:nth-child(4){
 			display: none;
 			@include desde(tablet){
@@ -67,6 +80,21 @@ h2{
 		&:hover{
 			color: white;
 		}
+		@include desde(tablet){
+			margin-top: 2em;
+			padding: 0 .4em 0 .8em;
+			display: inline-block;
+			transition: all .5s;
+			box-shadow: 2px 0 rgba(#5d92d9,.9)inset;
+			&:hover{
+				box-shadow: 20em 0 rgba(#5d92d9,.9)inset;
+				color: white;
+			}
+		}
+		@include desde (web){
+			margin-top: 3em;
+			font-size: 1.3em;
+		}
 	}
 }
 
@@ -82,6 +110,9 @@ h2{
 	font-family: 'Muli', sans-serif;
 	text-align: center;
 	font-size: 1.1em;
+	@include desde (tablet){
+		line-height: 2;
+	}
 }
 
 /*///////////////////////////////////////////////////////////
@@ -92,6 +123,9 @@ h2{
 	width: 100%;
 	background: #606157 url("imagenes/texturas.png")repeat;
 	text-align: center;
+	@include desde (tablet){
+		bottom: 0;
+	}
 	a{
 		display: inline-block;
 		text-decoration: none;
@@ -172,10 +206,10 @@ h2{
 
 
 @keyframes nubeAnimada {
-  0% {
+  100% {
     margin-left: -1400px;
   }
-  100% {
+  0% {
     margin-left: 100%;
   }
 }
@@ -193,6 +227,7 @@ h2{
 .n3 {
   animation: nubeAnimada 40s linear infinite;
   transform: scale(1.5);
+  z-index: 40;
 }
 
 /*//////////////////////////////////////////////////////////
@@ -206,6 +241,9 @@ h2{
 	overflow: hidden;
 	margin-top:1.5em;
 	height: 150px;
+	@include desde(tablet){
+		height: 250px;
+	}
 }
 .animado
 {
