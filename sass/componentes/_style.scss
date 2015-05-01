@@ -93,7 +93,8 @@ h2{
 		}
 		@include desde (web){
 			margin-top: 3em;
-			font-size: 1.3em;
+			font-size: 1.2em;
+			padding: 0 .5em 0 1.9em;
 		}
 	}
 }
@@ -244,6 +245,9 @@ h2{
 	@include desde(tablet){
 		height: 250px;
 	}
+	@include desde (web){
+		height: 300px;
+	}
 }
 .animado
 {
@@ -258,7 +262,22 @@ h2{
 		z-index: 20;
 		position: absolute;
 		top: -20px;
+		@include desde(web){
+			top: -29px;
+		}
 	}
+}
+
+@keyframes textoAnimado {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -28;
+  }
+}
+.animado__img{
+	animation: textoAnimado 5s linear 2s infinite alternate;
 }
 
 
@@ -267,3 +286,40 @@ h2{
       AQUI TERMINA  NUBES Y LA ANIMACION 
 
 *////////////////////////////////////////////////////////////
+
+
+
+/*//////////////////////////////////////////////////////////
+
+		ACERCA DE MI
+
+/////////////////////////////////////////////////////////*/
+
+.titulo__h1{
+	font-family: 'Lobster', cursive;
+	text-align: left;
+	color: white;
+	font-size: 2em;
+}
+.fondo__generico{
+	width: 100%;
+	background-color: #5d92d9;
+	height: 90px;
+	margin-top:1.5em;
+	overflow: hidden;
+}
+
+@keyframes textoTitulo {
+  0% {
+    margin-left: 2000px;
+    color: transparent;
+  }
+  100% {
+    margin-left: 0;
+    color: white;
+  }
+}
+
+.titulo__h1{
+	animation: textoTitulo .5s linear;
+}

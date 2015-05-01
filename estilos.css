@@ -1260,14 +1260,15 @@ h2 {
     @media screen and (min-width: 1025px) {
       .menu__link {
         margin-top: 3em;
-        font-size: 1.3em; } }
+        font-size: 1.2em;
+        padding: 0 0.5em 0 1.9em; } }
 
 /*///////////////////////////////////////////////////////////
        
                       FIN DE  HEADER + NAV
 
 ///////////////////////////////////////////////////////////*/
-/* line 108, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+/* line 109, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
 .caja-texto {
   padding: 1.5em 1em;
   font-family: 'Muli', sans-serif;
@@ -1280,7 +1281,7 @@ h2 {
 /*///////////////////////////////////////////////////////////
                          FOOTER
 /////////////////////////////////////////////////////////*/
-/* line 122, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+/* line 123, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
 .footer {
   width: 100%;
   background: #606157 url("imagenes/texturas.png") repeat;
@@ -1288,15 +1289,15 @@ h2 {
   @media screen and (min-width: 768px) {
     .footer {
       bottom: 0; } }
-  /* line 129, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+  /* line 130, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
   .footer a {
     display: inline-block;
     text-decoration: none;
     color: #2f3637; }
-    /* line 133, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+    /* line 134, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
     .footer a :hover {
       color: black; }
-  /* line 137, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+  /* line 138, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
   .footer p {
     font-family: 'Lobster', cursive;
     font-size: 1.5rem;
@@ -1305,12 +1306,12 @@ h2 {
     margin-top: 0.3em;
     margin-bottom: 0;
     padding-left: 0.2em; }
-  /* line 146, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+  /* line 147, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
   .footer h2 {
     margin: 0;
     padding: 0 0.1em 0.2em 0.1em; }
 
-/* line 151, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+/* line 152, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
 .home {
   padding: 0.5em 0.3em 0.2em 0 !important;
   box-shadow: 2px 0 #2f3637;
@@ -1325,7 +1326,7 @@ h2 {
       ESTO ES SOLO NUBES Y LA ANIMACION DE LAS NUBES
 
 */
-/* line 172, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+/* line 173, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
 .nube {
   background: #fff;
   border-radius: 100px;
@@ -1334,14 +1335,14 @@ h2 {
   position: relative;
   width: 350px; }
 
-/* line 182, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+/* line 183, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
 .nube:after, .nube:before {
   background: #fff;
   content: '';
   position: absolute;
   z-indeX: -1; }
 
-/* line 189, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+/* line 190, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
 .nube:after {
   border-radius: 100px;
   height: 100px;
@@ -1349,7 +1350,7 @@ h2 {
   top: -50px;
   width: 100px; }
 
-/* line 197, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+/* line 198, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
 .nube:before {
   border-radius: 200px;
   width: 180px;
@@ -1358,24 +1359,24 @@ h2 {
   top: -90px; }
 
 @-webkit-keyframes nubeAnimada {
-  /* line 209, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+  /* line 210, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
   100% {
     margin-left: -1400px; }
 
-  /* line 212, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+  /* line 213, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
   0% {
     margin-left: 100%; } }
 
 @keyframes nubeAnimada {
-  /* line 209, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+  /* line 210, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
   100% {
     margin-left: -1400px; }
 
-  /* line 212, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+  /* line 213, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
   0% {
     margin-left: 100%; } }
 
-/* line 217, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+/* line 218, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
 .n1 {
   -webkit-animation: nubeAnimada 35s linear infinite;
           animation: nubeAnimada 35s linear infinite;
@@ -1383,7 +1384,7 @@ h2 {
       -ms-transform: scale(0.4);
           transform: scale(0.4); }
 
-/* line 222, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+/* line 223, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
 .n2 {
   -webkit-animation: nubeAnimada 25s linear infinite;
           animation: nubeAnimada 25s linear infinite;
@@ -1391,7 +1392,7 @@ h2 {
       -ms-transform: scale(0.7);
           transform: scale(0.7); }
 
-/* line 227, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+/* line 228, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
 .n3 {
   -webkit-animation: nubeAnimada 40s linear infinite;
           animation: nubeAnimada 40s linear infinite;
@@ -1403,7 +1404,7 @@ h2 {
 /*//////////////////////////////////////////////////////////
                   FONDO + IMAGEN NOMBRE
 //////////////////////////////////////////////////////////*/
-/* line 236, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+/* line 237, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
 .fondo {
   background-color: #5d92d9;
   width: 100%;
@@ -1414,13 +1415,16 @@ h2 {
   @media screen and (min-width: 768px) {
     .fondo {
       height: 250px; } }
+  @media screen and (min-width: 1025px) {
+    .fondo {
+      height: 300px; } }
 
-/* line 248, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+/* line 252, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
 .animado {
   margin-top: 3em;
   text-align: center;
   margin-right: 0; }
-  /* line 253, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+  /* line 257, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
   .animado__img {
     text-align: center;
     padding: 0;
@@ -1429,9 +1433,81 @@ h2 {
     z-index: 20;
     position: absolute;
     top: -20px; }
+    @media screen and (min-width: 1025px) {
+      .animado__img {
+        top: -29px; } }
+
+@-webkit-keyframes textoAnimado {
+  /* line 272, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+  0% {
+    top: 0; }
+
+  /* line 275, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+  100% {
+    top: -28; } }
+
+@keyframes textoAnimado {
+  /* line 272, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+  0% {
+    top: 0; }
+
+  /* line 275, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+  100% {
+    top: -28; } }
+
+/* line 279, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+.animado__img {
+  -webkit-animation: textoAnimado 5s linear 2s infinite alternate;
+          animation: textoAnimado 5s linear 2s infinite alternate; }
 
 /* //////////////////////////////////////////////////////////
 
       AQUI TERMINA  NUBES Y LA ANIMACION 
 
 */
+/*//////////////////////////////////////////////////////////
+
+		ACERCA DE MI
+
+/////////////////////////////////////////////////////////*/
+/* line 298, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+.titulo__h1 {
+  font-family: 'Lobster', cursive;
+  text-align: left;
+  color: white;
+  font-size: 2em; }
+
+/* line 304, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+.fondo__generico {
+  width: 100%;
+  background-color: #5d92d9;
+  height: 90px;
+  margin-top: 1.5em;
+  overflow: hidden; }
+
+@-webkit-keyframes textoTitulo {
+  /* line 313, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+  0% {
+    margin-left: 2000px;
+    color: transparent; }
+
+  /* line 317, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+  100% {
+    margin-left: 0;
+    color: white; } }
+
+@keyframes textoTitulo {
+  /* line 313, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+  0% {
+    margin-left: 2000px;
+    color: transparent; }
+
+  /* line 317, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+  100% {
+    margin-left: 0;
+    color: white; } }
+
+/* line 323, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+.titulo__h1 {
+  -webkit-animation: textoTitulo 0.5s linear;
+          animation: textoTitulo 0.5s linear; }
