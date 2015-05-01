@@ -6,41 +6,43 @@
 	<link rel="stylesheet" href="estilos.css">
 	<link href='http://fonts.googleapis.com/css?family=Lobster|Muli:400,400italic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/styles.css">
+	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 </head>
 <body>
 	<div class="grupo">
-		<div class="caja movil-50 tablet-1-8">
+		<div class="caja base-50">
 			<img class="logo" src="imagenes/rostro.png" alt="logo">
 		</div>
-		<div class="caja movil-50 tablet-7-8">
-			<nav class="navegador ocultar-nav">
-				<ul class="navegador__ul">
-					<li><a href="icons-reference.html">Acerca de mi</a></li>
-					<li><a href="#">Ilustraciones</a></li>
-					<li><a href="#">Motion Graphics</a></li>
-					<li><a href="#">Javascript</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Contacto</a></li>
+		<div class="caja base-50">
+			<div id="mostrar-menu"></div>
+				<ul class="menu">
+					<li class="menu__item"><a class="menu__link"href="#">Acerca de mi</a></li>
+					<li class="menu__item"><a class="menu__link"href="#">Ilustraciones</a></li>
+					<li class="menu__item"><a class="menu__link"href="#">Motion Graphics</a></li>
+					<li class="menu__item"><a class="menu__link"href="#">Javascript</a></li>
+					<li class="menu__item"><a class="menu__link"href="#">Blog</a></li>
+					<li class="menu__item"><a class="menu__link"href="#">Contacto</a></li>
 				</ul>
-			</nav>
 		</div>
 	</div>
+	                     <!-- FONDO ANIMADO DE NUBES-->
 	<div class="fondo">
 		<div class="grupo animado">
-			<div class="x1">
-        		<div class="cloud"></div>
+			<div class="n1">
+        		<div class="nube"></div>
 	    	</div>
 
-	    	<div class="x2">
-	        	<div class="cloud"></div>
+	    	<div class="n2">
+	        	<div class="nube"></div>
 	    	</div>
 
-	    	<div class="x3">
-	        	<div class="cloud"></div>
+	    	<div class="n3">
+	        	<div class="nube"></div>
 	    	</div>
 			<img class=" caja total animado__img" src="imagenes/carlos.png" alt="nombre">
 		</div>
 	</div>
+				            <!-- CONTENIDO DEL HOME-->
 	<div class="grupo">
 		<div class="caja tablet-50 responsive">
 			<img  class="responsive__img" src="imagenes/responsive.png" alt="dispositivos">
@@ -54,11 +56,12 @@
 	</div>
 	<div class="footer">
 		<footer class="grupo">
-			<div class="caja movil-1-8"><a href="#"><h2 class="icon-home home"></h2></a></div>
-			<div class="caja movil-7-8"><p>--Redes Sociales--</p><a href="https://github.com/CarlosManotas"><h2 class="icon-github"></h2></a>
+			<div class="caja base-1-8"><a href="#"><h2 class="icon-home home"></h2></a></div>
+			<div class="caja base-7-8"><p>--Redes Sociales--</p><a href="https://github.com/CarlosManotas"><h2 class="icon-github"></h2></a>
 			<a href="https://twitter.com/CarlosManotasV"><h2 class="icon-twitter"></h2></a>
 			<a href="https://www.linkedin.com/profile/preview?vpa=pub&locale=es_ES"><h2 class="icon-linkedin"></h2></a></div>
 		</footer>
 	</div>
+	<script type="text/javascript" src="funcion.js"></script>
 </body>
 </html>
