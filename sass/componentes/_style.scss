@@ -1,6 +1,6 @@
 body{
 	background:#d7dac4 url("imagenes/texturas.png")repeat;
-	
+	min-width: 320px;
 }
 h1{
 	text-align: center;
@@ -395,4 +395,59 @@ h2{
 }
 .centrado{
 	text-align:center;
+}
+
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+
+.contenedor_img{
+	img{
+		padding: .5em 0;
+	}
+
+	@include desde(tablet){
+		
+
+
+		img{
+			cursor:pointer;
+			max-height: 220px;
+			background-color:rgba(black,.5);
+			object-fit: contain;
+		}
+
+		@include cuadricula(img,2)
+	}
+
+	@include desde (web){
+
+		img{
+			cursor:pointer;
+			height: 220px;
+			object-fit: cover;
+			margin: .5em 0;
+		}
+
+		@include cuadricula(img,3,0%)
+	}
+}
+#previa{
+	background: rgba(0,0,0,.8);
+	display:none;
+	height:100vh;
+	width:100vw;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	margin: auto;
+	text-align: center;
+	z-index: 100;
+
+	position:fixed;
+	@include desde (tablet){
+		height: 100vh;
+		width: 100vw;
+		object-fit: contain;
+	}
 }

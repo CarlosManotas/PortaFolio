@@ -1162,7 +1162,8 @@ body.desarrollo:before {
 
 /* line 1, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
 body {
-  background: #d7dac4 url("imagenes/texturas.png") repeat; }
+  background: #d7dac4 url("imagenes/texturas.png") repeat;
+  min-width: 320px; }
 
 /* line 5, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
 h1 {
@@ -1613,3 +1614,69 @@ h2 {
 /* line 396, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
 .centrado {
   text-align: center; }
+
+/* line 404, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+.contenedor_img img {
+  padding: 0.5em 0; }
+@media screen and (min-width: 768px) {
+  .contenedor_img {
+    font-size: 0; }
+    /* line 412, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+    .contenedor_img img {
+      cursor: pointer;
+      max-height: 220px;
+      background-color: rgba(0, 0, 0, 0.5);
+      object-fit: contain; }
+    /* line 67, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/mixins */
+    .contenedor_img > img, .contenedor_img > .img {
+      display: inline-block;
+      float: none;
+      font-size: 1rem;
+      width: 49%;
+      margin-right: 2%;
+      margin-bottom: 2%;
+      vertical-align: top; }
+      /* line 76, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/mixins */
+      .contenedor_img > img:nth-child(2n), .contenedor_img > .img:nth-child(2n) {
+        margin-right: 0; } }
+@media screen and (min-width: 1025px) {
+  .contenedor_img {
+    font-size: 0; }
+    /* line 424, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+    .contenedor_img img {
+      cursor: pointer;
+      height: 220px;
+      object-fit: cover;
+      margin: 0.5em 0; }
+    /* line 67, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/mixins */
+    .contenedor_img > img, .contenedor_img > .img {
+      display: inline-block;
+      float: none;
+      font-size: 1rem;
+      width: 33.333333333%;
+      margin-right: 0%;
+      margin-bottom: 0%;
+      vertical-align: top; }
+      /* line 76, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/mixins */
+      .contenedor_img > img:nth-child(3n), .contenedor_img > .img:nth-child(3n) {
+        margin-right: 0; } }
+
+/* line 434, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+#previa {
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  z-index: 100;
+  position: fixed; }
+  @media screen and (min-width: 768px) {
+    #previa {
+      height: 100vh;
+      width: 100vw;
+      object-fit: contain; } }
