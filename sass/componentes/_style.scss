@@ -257,27 +257,39 @@ h2{
 	&__img{
 		text-align: center;
 		padding: 0 ;
-		margin: 0 ;
+		margin: auto ;
 		max-width: 900px;
 		z-index: 20;
-		position: absolute;
-		top: -20px;
-		@include desde(web){
-			top: -29px;
-		}
+		position: absolute;	
+
+		left: 0;
+		right: 0;
+		bottom:0;
+		top:0;
 	}
 }
 
-@keyframes textoAnimado {
+@keyframes textoAnimadoTablet {
   0% {
-    top: 0;
+    top: -50px;
   }
   100% {
-    top: -28;
+    top: -70px;
+  }
+}
+@keyframes textoAnimado {
+  0% {
+    top: -20px;
+  }
+  100% {
+    top: -70px;
   }
 }
 .animado__img{
 	animation: textoAnimado 5s linear 2s infinite alternate;
+	@include desde (tablet){
+		animation: textoAnimadoTablet 4s linear 2s infinite alternate;
+	}
 }
 
 
@@ -305,7 +317,7 @@ h2{
 	width: 100%;
 	background-color: #5d92d9;
 	height: 90px;
-	margin-top:1.5em;
+	margin:1.5em 0;
 	overflow: hidden;
 }
 
@@ -321,5 +333,66 @@ h2{
 }
 
 .titulo__h1{
-	animation: textoTitulo .5s linear;
+	animation: textoTitulo .5s ease-in;
+}
+
+
+/////////////////////////////////////////////////////
+
+.img__item{
+	border-radius: 50%;
+	max-width: 150px !important;
+
+	@include desde (tablet) {
+
+		display: none !important;
+	}
+}
+.img__item__2{
+	display:none;
+	@include desde (tablet){
+		border-radius: 50%;
+		width: 180px;
+		display: inline-block;
+	}
+}
+.seccion{
+	text-align: center;
+
+	img{
+		width: 100%;
+		&:nth-child(4){
+			padding-top: 1em;
+		}
+	}
+
+	@include cuadricula(img,4,3%)
+
+}
+.seccion{
+
+	@include desde-hasta(tablet,hd){
+		img{
+			max-width: 120px;
+		}
+		@include cuadricula(img,2,10%)
+	}
+}
+.caja-p{
+	padding: 1.5em 1em;
+	font-family: 'Muli', sans-serif;
+	text-align: center;
+	font-size: 1.1em;
+	@include desde (tablet){
+		line-height: 2;
+	}
+	@include desde (web){
+		font-size: 1.5em;
+	}
+}
+.acerca{
+	text-align:center;
+}
+.centrado{
+	text-align:center;
 }
