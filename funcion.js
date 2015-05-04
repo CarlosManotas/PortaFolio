@@ -39,7 +39,7 @@ var fondo =
 {
 	x:0,
 	y:0,
-	imagenURL: "Imagenes/fondo.png",
+	imagenURL: "imagenes/fondo.png",
 	imagenOK: false
 };
 
@@ -69,7 +69,7 @@ var pelota =
 	diago: 0,
 	dn: 0,
 	dm: 10,
-	imagenURL: "Imagenes/pelota.png",
+	imagenURL: "imagenes/pelota.png",
 	imagenOK: false
 };
 
@@ -161,7 +161,7 @@ var barraRight =
 	y:150,
 	w: 20,
 	h: 100,
-	imagenURL: "Imagenes/barra-dcha.png",
+	imagenURL: "imagenes/barra-dcha.png",
 	imagenOK: false,
 	velocidad: 10
 };
@@ -171,7 +171,7 @@ var barraLeft =
 	y:150,
 	w: 20,
 	h: 100,
-	imagenURL: "Imagenes/barra-izq.png",
+	imagenURL: "imagenes/barra-izq.png",
 	imagenOK: false,
 	velocidad: 10
 };
