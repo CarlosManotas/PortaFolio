@@ -1402,10 +1402,19 @@ h2 {
           transform: scale(1.5);
   z-index: 40; }
 
+/* line 233, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+.n4 {
+  -webkit-animation: nubeAnimada 30s linear infinite;
+          animation: nubeAnimada 30s linear infinite;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  z-index: -1; }
+
 /*//////////////////////////////////////////////////////////
                   FONDO + IMAGEN NOMBRE
 //////////////////////////////////////////////////////////*/
-/* line 237, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+/* line 243, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
 .fondo {
   background-color: #5d92d9;
   width: 100%;
@@ -1420,12 +1429,12 @@ h2 {
     .fondo {
       height: 300px; } }
 
-/* line 252, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+/* line 258, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
 .animado {
   margin-top: 3em;
   text-align: center;
   margin-right: 0; }
-  /* line 257, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+  /* line 263, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
   .animado__img {
     text-align: center;
     padding: 0;
@@ -1439,42 +1448,42 @@ h2 {
     top: 0; }
 
 @-webkit-keyframes textoAnimadoTablet {
-  /* line 273, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+  /* line 279, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
   0% {
     top: -50px; }
 
-  /* line 276, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+  /* line 282, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
   100% {
     top: -70px; } }
 
 @keyframes textoAnimadoTablet {
-  /* line 273, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+  /* line 279, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
   0% {
     top: -50px; }
 
-  /* line 276, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+  /* line 282, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
   100% {
     top: -70px; } }
 
 @-webkit-keyframes textoAnimado {
-  /* line 281, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+  /* line 287, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
   0% {
     top: -20px; }
 
-  /* line 284, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+  /* line 290, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
   100% {
     top: -70px; } }
 
 @keyframes textoAnimado {
-  /* line 281, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+  /* line 287, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
   0% {
     top: -20px; }
 
-  /* line 284, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+  /* line 290, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
   100% {
     top: -70px; } }
 
-/* line 288, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+/* line 294, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
 .animado__img {
   -webkit-animation: textoAnimado 5s linear 2s infinite alternate;
           animation: textoAnimado 5s linear 2s infinite alternate; }
@@ -1493,14 +1502,14 @@ h2 {
 		ACERCA DE MI
 
 /////////////////////////////////////////////////////////*/
-/* line 310, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+/* line 316, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
 .titulo__h1 {
   font-family: 'Lobster', cursive;
   text-align: left;
   color: white;
   font-size: 2em; }
 
-/* line 316, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+/* line 322, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
 .fondo__generico {
   width: 100%;
   background-color: #5d92d9;
@@ -1509,33 +1518,33 @@ h2 {
   overflow: hidden; }
 
 @-webkit-keyframes textoTitulo {
-  /* line 325, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+  /* line 331, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
   0% {
     margin-left: 2000px;
     color: transparent; }
 
-  /* line 329, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+  /* line 335, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
   100% {
     margin-left: 0;
     color: white; } }
 
 @keyframes textoTitulo {
-  /* line 325, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+  /* line 331, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
   0% {
     margin-left: 2000px;
     color: transparent; }
 
-  /* line 329, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+  /* line 335, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
   100% {
     margin-left: 0;
     color: white; } }
 
-/* line 335, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+/* line 341, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
 .titulo__h1 {
   -webkit-animation: textoTitulo 0.5s ease-in;
           animation: textoTitulo 0.5s ease-in; }
 
-/* line 343, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+/* line 349, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
 .img__item {
   border-radius: 50%;
   max-width: 150px !important; }
@@ -1543,7 +1552,7 @@ h2 {
     .img__item {
       display: none !important; } }
 
-/* line 352, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+/* line 358, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
 .img__item__2 {
   display: none; }
   @media screen and (min-width: 768px) {
@@ -1552,14 +1561,14 @@ h2 {
       width: 180px;
       display: inline-block; } }
 
-/* line 360, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+/* line 366, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
 .seccion {
   text-align: center;
   font-size: 0; }
-  /* line 363, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+  /* line 369, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
   .seccion img {
     width: 100%; }
-    /* line 365, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+    /* line 371, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
     .seccion img:nth-child(4) {
       padding-top: 1em; }
   /* line 67, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/mixins */
@@ -1578,7 +1587,7 @@ h2 {
 @media screen and (min-width: 768px) and (max-width: 1399px) {
   .seccion {
     font-size: 0; }
-    /* line 376, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+    /* line 382, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
     .seccion img {
       max-width: 120px; }
     /* line 67, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/mixins */
@@ -1594,7 +1603,7 @@ h2 {
       .seccion > img:nth-child(2n), .seccion > .img:nth-child(2n) {
         margin-right: 0; } }
 
-/* line 382, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+/* line 388, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
 .caja-p {
   padding: 1.5em 1em;
   font-family: 'Muli', sans-serif;
@@ -1607,21 +1616,21 @@ h2 {
     .caja-p {
       font-size: 1.5em; } }
 
-/* line 394, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+/* line 400, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
 .acerca {
   text-align: center; }
 
-/* line 397, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+/* line 403, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
 .centrado {
   text-align: center; }
 
-/* line 405, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+/* line 411, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
 .contenedor_img img {
   padding: 0.5em 0; }
 @media screen and (min-width: 768px) {
   .contenedor_img {
     font-size: 0; }
-    /* line 413, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+    /* line 419, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
     .contenedor_img img {
       cursor: pointer;
       max-height: 220px;
@@ -1642,7 +1651,7 @@ h2 {
 @media screen and (min-width: 1025px) {
   .contenedor_img {
     font-size: 0; }
-    /* line 425, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+    /* line 431, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
     .contenedor_img img {
       cursor: pointer;
       height: 220px;
@@ -1661,7 +1670,7 @@ h2 {
       .contenedor_img > img:nth-child(3n), .contenedor_img > .img:nth-child(3n) {
         margin-right: 0; } }
 
-/* line 435, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+/* line 441, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
 #previa {
   background: rgba(0, 0, 0, 0.9);
   display: none;
@@ -1676,11 +1685,11 @@ h2 {
   z-index: 100;
   position: fixed; }
 
-/* line 455, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+/* line 461, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
 .video {
   width: 300px;
   padding: 0; }
-  /* line 459, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+  /* line 465, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
   .video__item {
     padding: 0;
     left: 0;
@@ -1689,7 +1698,7 @@ h2 {
     overflow: hidden;
     padding-bottom: 53.4375%;
     position: relative; }
-    /* line 467, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+    /* line 473, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
     .video__item iframe {
       padding: 0.5em 0;
       position: absolute;
@@ -1700,7 +1709,7 @@ h2 {
     .video {
       width: 640px; } }
 
-/* line 484, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+/* line 490, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
 .anotacion {
   width: 80px;
   height: 60px;
@@ -1710,16 +1719,80 @@ h2 {
   font-size: 3em;
   margin: 0.5em; }
 
-/* line 494, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+/* line 500, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
 .campo {
   background-color: #fff; }
 
-/* line 498, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+/* line 504, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
 .score {
   padding: 0.5em;
   text-align: center; }
 
-/* line 502, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+/* line 508, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
 .canvas {
   text-align: center;
   margin-bottom: 2rem; }
+
+/* line 515, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+.dibujando {
+  width: 100%; }
+
+/* line 520, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+.dibujando {
+  width: 300px;
+  height: 490px;
+  background: #e2a388 url(Imagenes/mapa.png);
+  background-size: auto auto;
+  border-radius: 90px 90px 65px 45px;
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+  z-index: 5;
+  -webkit-animation: rostro 10s infinite alternate;
+          animation: rostro 10s infinite alternate; }
+
+@-webkit-keyframes rostro {
+  /* line 536, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+  0% {
+    background-position: 34% 48%;
+    border-radius: 40% 40% 35% 20%; }
+
+  /* line 540, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+  50% {
+    background-position: 58% 41%;
+    border-radius: 90px 90px 25% 25%; }
+
+  /* line 544, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+  100% {
+    background-position: 75% 46%;
+    border-radius: 40% 40% 20% 35%; } }
+
+@keyframes rostro {
+  /* line 536, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+  0% {
+    background-position: 34% 48%;
+    border-radius: 40% 40% 35% 20%; }
+
+  /* line 540, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+  50% {
+    background-position: 58% 41%;
+    border-radius: 90px 90px 25% 25%; }
+
+  /* line 544, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+  100% {
+    background-position: 75% 46%;
+    border-radius: 40% 40% 20% 35%; } }
+
+/* line 549, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+.foo {
+  margin-top: 2rem; }
+
+/* line 552, C:/Users/manotas/Desktop/Todo-WEB/Portafolio-ultimate/sass/componentes/style */
+.Htitulo {
+  text-align: center;
+  font-family: 'Muli', sans-serif;
+  font-style: italic;
+  margin: 0; }

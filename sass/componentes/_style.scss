@@ -201,7 +201,7 @@ h2{
   height: 180px;
   right: 50px;
   top: -90px;
-}
+} 
 
 // ANIMACION DE NUBES //
 
@@ -230,6 +230,12 @@ h2{
   transform: scale(1.5);
   z-index: 40;
 }
+.n4 {
+  animation: nubeAnimada 30s linear infinite;
+  transform: scale(1.0);
+  z-index:-1;
+}
+
 
 /*//////////////////////////////////////////////////////////
                   FONDO + IMAGEN NOMBRE
@@ -502,4 +508,50 @@ h2{
 .canvas{
 	text-align:center;
 	margin-bottom:2rem;
+}
+////////////////////////////////////////////////////
+////////////////////////////////////////////////////
+
+.dibujando{
+	width:100%;
+
+}
+
+.dibujando{
+    width: 300px;
+    height: 490px;
+    background: #e2a388 url(Imagenes/mapa.png);
+    background-size: auto auto;
+    border-radius: 90px 90px 65px 45px;
+    position: relative;
+	top:0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: 0 auto;
+	z-index: 5;
+	animation: rostro 10s infinite alternate;
+}
+@keyframes rostro{
+	0%{
+		background-position: 34% 48%;
+		border-radius: 40% 40% 35% 20%;
+	}
+	50%{
+		background-position: 58% 41%;
+		border-radius: 90px 90px 25% 25%;
+	}
+	100%{
+		background-position: 75% 46%;
+		border-radius: 40% 40% 20% 35%;
+	}
+}
+.foo{
+	margin-top: 2rem;
+}
+.Htitulo{
+	text-align: center;
+	font-family: 'Muli', sans-serif;
+	font-style: italic;
+	margin:0;
 }

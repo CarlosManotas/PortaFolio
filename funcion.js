@@ -66,7 +66,9 @@ var pelota =
 	w: 16,
 	h: 16,
 	direccion: 3,
-	angulo: 45,
+	diago: 0,
+	dn: 0,
+	dm: 10,
 	imagenURL: "Imagenes/pelota.png",
 	imagenOK: false
 };
@@ -87,17 +89,51 @@ function colicion(){
 		SONIDOS.beep.play();
 	}
 	if (pelota.x < 0){
-		pelota.direccion = 3;
+		puntos2 +=1;
+		document.getElementById("puntos2").innerText = puntos2;
 		SONIDOS.gol.play();
+		pelota.x = 295;
+		pelota.direccion = 3;
 	}
 	if (pelota.x >=595){
+		var puntos1 = document.getElementById("puntos1").innerText;
+		var puntaje = parseInt('puntos1');
+		puntaje ++;
+		pelota.x = 295;
 		pelota.direccion = 4;
 		SONIDOS.gol.play();
 	}
-	if (barraLeft.w + pelota.w <= 35 && barraLeft.y + pelota.y == 100 ){
-		pelota.direccion = 3;
-
+	
+}
+function colicionBarraL(){
+	if (barraLeft.x + barraLeft.w < pelota.x){
+		return false;
 	}
+	if (barraLeft.y + barraLeft.h < pelota.y){
+		return false;
+	}
+	if (barraLeft.x > pelota.x + pelota.w){
+		return false;
+	}
+	if (barraLeft.y > pelota.y + pelota.h){
+		return false;
+	}
+	pelota.direccion = 3;
+}
+function colicionBarraR(){
+	if (barraRight.x + barraRight.w < pelota.x){
+		return false;
+	}
+	if (barraRight.y + barraRight.h < pelota.y){
+		return false;
+	}
+	if (barraRight.x > pelota.x + pelota.w){
+		return false;
+	}
+	if (barraRight.y > pelota.y + pelota.h){
+		return false;
+	}
+	pelota.direccion = 4;
 }
 function moverPelota(){
 	if (pelota.direccion == 1){
@@ -112,6 +148,9 @@ function moverPelota(){
 	if (pelota.direccion == 4){
 		pelota.x -= pelota.vI;
 	}
+	if(pelota.diago==0){pelota.dm=-pelota.dm}
+    if(pelota.diago==1){pelota.dm=-pelota.dm;pelota.dn=-10}
+    if(pelota.diago==2){pelota.dm=-pelota.dm;pelota.dn=10}
 	
 }
 
@@ -157,6 +196,8 @@ function inicio(){
 	pelota.imagen.src = pelota.imagenURL;
 	pelota.imagen.onload = confirmarPelota;
 	colicion();
+	colicionBarraL();
+	colicionBarraR();
 	moverPelota();
 
 	document.addEventListener("keydown", teclado);
@@ -237,9 +278,4 @@ function dibujar()
 	{
 		tablero.drawImage(pelota.imagen, pelota.x, pelota.y);
 	}
-}
-function anotacion()
-{
-	var puntos1 = document.getElementById("puntos1");
-	var puntos2 = document.getElementById("puntos2");
 }
