@@ -64,7 +64,7 @@ h2{
 		}
 		&:nth-child(4){
 			display: none;
-			@include desde(tablet){
+			@include desde(web){
 				display:inline-block;
 			}
 		}
@@ -378,7 +378,7 @@ h2{
 }
 .seccion{
 
-	@include desde(web){
+	@include desde(tablet){
 		img{
 			max-width: 155px;
 		}
