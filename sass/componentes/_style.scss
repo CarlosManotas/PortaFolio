@@ -109,8 +109,8 @@ h2{
 .caja-texto{
 	padding: 1.5em 1em;
 	font-family: 'Muli', sans-serif;
-	text-align: center;
-	font-size: 1.1em;
+	text-align: left;
+	font-size: 1.2em;
 	@include desde (tablet){
 		line-height: 2;
 	}
@@ -378,9 +378,9 @@ h2{
 }
 .seccion{
 
-	@include desde-hasta(tablet,hd){
+	@include desde(web){
 		img{
-			max-width: 120px;
+			max-width: 155px;
 		}
 		@include cuadricula(img,2,10%)
 	}
@@ -517,10 +517,10 @@ h2{
 
 }
 
-.dibujando{
+.dibujando, 
+.dibujando1{
     width: 300px;
     height: 490px;
-    background: #e2a388 url(imagenes/mapa.png);
     background-size: auto auto;
     border-radius: 90px 90px 65px 45px;
     position: relative;
@@ -529,23 +529,43 @@ h2{
 	bottom: 0;
 	left: 0;
 	margin: 0 auto;
-	z-index: 5;
-	animation: rostro 10s infinite alternate;
+	z-index: 1;
+	
+}
+.dibujando{
+	animation: rostro 15s infinite alternate;
+	background: #e2a388 url(imagenes/mapa.png);
+}
+.dibujando1{
+	animation: girar 2s infinite alternate;
+	background: #e2a388 url(imagenes/mapa2.png);
 }
 @keyframes rostro{
 	0%{
-		background-position: 34% 48%;
-		border-radius: 40% 40% 35% 20%;
+		background-position: 34% 55%;
+		border-radius: 40% 45% 50% 20%;
 	}
 	50%{
-		background-position: 58% 41%;
+		background-position: 54% 41%;
 		border-radius: 90px 90px 25% 25%;
 	}
 	100%{
-		background-position: 75% 46%;
-		border-radius: 40% 40% 20% 35%;
+		background-position: 76% 55%;
+		border-radius: 45% 40% 20% 50%;
 	}
 }
+@keyframes girar{
+	0%{
+		background-position: 50% 85%; 
+		border-radius: 200% 200% 200% 200%;
+	}
+	100%{
+		background-position: 50% 10%;
+		border-radius: 150% 150% 100% 100% ;
+	}
+}
+
+
 .foo{
 	margin-top: 2rem;
 }
