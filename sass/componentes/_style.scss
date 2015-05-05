@@ -9,7 +9,7 @@ h1{
 	font-size: 1.5rem;
 }
 h2{
-	font-size: 3rem;
+	font-size: 3rem; 
 }
 .titulo{
 	@include desde (tablet){
@@ -395,11 +395,17 @@ h2{
 	font-family: 'Muli', sans-serif;
 	text-align: center;
 	font-size: 1.1em;
+
 	@include desde (tablet){
 		line-height: 2;
 	}
 	@include desde (web){
 		font-size: 1.5em;
+	}
+	span{
+		color: rgba(white,.9);
+		box-shadow: 5px 40px 5px 5px rgba(0,0,0,.5) inset;
+		padding: 0 .2em;
 	}
 }
 .acerca{
