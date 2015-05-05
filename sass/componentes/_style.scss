@@ -253,6 +253,7 @@ h2{
 	overflow: hidden;
 	margin-top:1.5em;
 	height: 150px;
+	position: relative;
 	@include desde(tablet){
 		height: 250px;
 	}
@@ -267,33 +268,31 @@ h2{
 	margin-right: 0;
 	&__img{
 		text-align: center;
-		padding: 0 ;
-		margin: auto ;
-		max-width: 900px;
+		margin: auto;
 		z-index: 20;
 		position: absolute;	
-
+		top:0;
 		left: 0;
 		right: 0;
-		bottom:0;
-		top:0;
+		bottom: 0;
+
 	}
 }
 
 @keyframes textoAnimadoTablet {
   0% {
-    top: -50px;
+    bottom: 0;
   }
   100% {
-    top: -70px;
+    bottom: 25px;
   }
 }
 @keyframes textoAnimado {
   0% {
-    top: -20px;
+    bottom: -50px;
   }
   100% {
-    top: -70px;
+    bottom: 75px;
   }
 }
 .animado__img{
@@ -346,7 +345,9 @@ h2{
 .titulo__h1{
 	animation: textoTitulo .5s ease-in;
 }
-
+.pointer{
+	cursor:pointer;
+}
 
 /////////////////////////////////////////////////////
 
