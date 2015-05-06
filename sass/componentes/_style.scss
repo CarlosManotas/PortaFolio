@@ -424,7 +424,7 @@ h2{
 		padding: .5em 0;
 	}
 
-	@include desde(tablet){
+	@include desde-hasta(tablet,web){
 		
 
 
@@ -447,7 +447,7 @@ h2{
 			margin: .5em 0;
 		}
 
-		@include cuadricula(img,3,0%)
+		@include cuadricula(img,3,4%)
 	}
 }
 #previa{
