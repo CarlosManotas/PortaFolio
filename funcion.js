@@ -4,7 +4,7 @@ $(function() {
 	})
 
 	$('#container img').on('click', abrir);
-	$('#imgFull').on('click', cerrar);
+	$('#previa').on('click', cerrar);
 
 
 });
